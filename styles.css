@@ -1,0 +1,173 @@
+:root {
+  --gray1: #333333;
+  --gray2: #4f4f4f;
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--gray1);
+  font-family: "Space Mono";
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.layout-container {
+  padding-top: 20px;
+  padding-left: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .layout {
+    padding-top: 40px;
+    padding-left: 77px;
+  }
+}
+
+.header-content {
+  font-family: "Inconsolata";
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 1.5625rem;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-top: 64px;
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  .main-col {
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .main {
+    height: calc(100vh - 420px);
+  }
+}
+
+.main-illustration {
+  height: 238px;
+  padding: 0 20px;
+  width: auto;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 4.4375rem;
+  margin-top: 60px;
+}
+
+.main-text {
+  color: var(--gray2);
+  font-size: 1.125rem;
+  letter-spacing: -0.035em;
+  line-height: 1.6875rem;
+  margin-top: 29px;
+  max-width: 381px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-illustration {
+    height: 447px;
+    padding: 0;
+    width: auto;
+  }
+
+  .main-title {
+    font-size: 4rem;
+    line-height: 5.9375rem;
+    margin-top: 0px;
+  }
+
+  .main-text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-top: 36px;
+  }
+}
+
+.main-cta {
+  background: var(--gray1) !important;
+  border: 1px;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.3125rem;
+  margin-top: 49px;
+  padding: 24px 43px 23px;
+  text-transform: uppercase;
+}
+
+.footer {
+  margin-top: 96px;
+  margin-bottom: 42px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .main-cta {
+    margin-top: 64px;
+  }
+
+  .footer {
+    margin-bottom: 39px;
+  }
+}
+
+.footer-content {
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.0625rem;
+}
